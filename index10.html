@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DnMeet</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body class="container">
+    <h1 class="display-1 text-center">Welcome Adventurer!</h1>
+    <h2 class="display-5 text-center">Come, have a seat and let's discuss your next quest.</h2>
+    <br /><br />
+    <p>
+      DnMeet is a your portal to your next wild adventure session. We offer
+      powerful scheduling tools to help you and your party members plan an event
+      to finally take on that dragon's lair, uncover the mysterious plot in the
+      village, or just go shopping for a new sword!
+    </p>
+
+    <div class="card text-bg-warning mb-3 border-dark mb-3">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="new-session-date">Session Date</label>
+              <input type="date" class="form-control" id="new-session-date" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg">
+              <div class="form-group">
+                <label for="new-session-time">Session Time</label>
+                <input type="time" class="form-control" id="new-session-time" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <div class="form-group">
+                <label for="new-session-goal">Goal of Next Session</label>
+                <input type="text" class="form-control" id="new-session-goal" />
+              </div>
+            </div>
+        </div>
+      </div><br>
+      <button id="add" class="btn btn-primary form-control">
+        Add New Schedule
+      </button>
+    </div>
+    <table id="listOfDates" class="table table-dark table-stripped">
+      <tr>
+        <th>Session Date:</th>
+        <th>Session Time:</th>
+        <th>Goal of Next Session:</th>
+        <th>Actions:</th>
+      </tr>
+    </table>
+
+    <script src="index10.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
